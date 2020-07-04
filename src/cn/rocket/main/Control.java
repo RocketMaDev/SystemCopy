@@ -9,23 +9,24 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.scene.control.Label;
 
+/**
+* The controller class of "Dialog.fxml" javafx app document.
+* <p><b>
+* Important Statement:
+* <p>
+* On <code>lines 42 , 43 , 44
+* @author RocketBD
+*/
 public class Control {
-//	class LabelControlThread extends Thread {
-//		public LabelControlThread() {
-//			super();
-//		}
-//		
-//		@Override
-//		public void run() {
-//			label.setVisible(true);
-//		}
-//	}
 	
 	@FXML TextArea textArea;
 	@FXML Button button;
 	@FXML Pane pane;
 	@FXML Label label;
 	
+	/**
+	* The method will be called when the button in GUI app is pressed.
+	*/
 	@FXML public void pressed() {
 		textArea.getText();
 		textArea.setDisable(true);
