@@ -5,19 +5,20 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-
-<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.rocket.main.Control">
-   <children>
-      <TextArea fx:id="textArea" layoutX="20.0" layoutY="20.0" onKeyPressed="#textChanged" prefHeight="330.0" prefWidth="560.0">
-         <font>
-            <Font name="Microsoft YaHei" size="18.0" />
-         </font>
-      </TextArea>
-      <Button fx:id="button" layoutX="225.0" layoutY="360.0" mnemonicParsing="false" onAction="#pressed" prefHeight="30.0" prefWidth="150.0" text="开始复制" />
-      <Label fx:id="label" layoutX="20.0" layoutY="362.0" text="内容不能为空！" textFill="RED" visible="false">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-   </children>
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="cn.rocket.main.Control">
+   <TextArea fx:id="textArea" layoutX="20.0" layoutY="20.0" onKeyPressed="#textChanged" prefHeight="330.0"
+             prefWidth="560.0">
+      <font>
+         <Font name="Microsoft YaHei" size="18.0"/>
+      </font>
+   </TextArea>
+   <Button fx:id="button" layoutX="225.0" layoutY="360.0" mnemonicParsing="false" onAction="#pressed" prefHeight="30.0"
+           prefWidth="150.0" text="开始复制"/>
+   <Label fx:id="label" layoutX="20.0" layoutY="362.0" text="内容不能为空！" textFill="RED" visible="false">
+      <font>
+         <Font size="20.0"/>
+      </font>
+   </Label>
 </Pane>
